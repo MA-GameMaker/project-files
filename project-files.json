@@ -1,0 +1,14 @@
+{
+  "directories": [
+    "%projname%",
+    "%projname%/Source",
+    "%projname%/Include",
+    "Scripts"
+  ],
+  "files": {
+    "premake5.lua": "https://raw.githubusercontent.com/MA-GameMaker/project-files/refs/heads/main/premakes/premake5-stable.lua",
+    "%projname%/Source/Main.cpp": "https://raw.githubusercontent.com/MA-GameMaker/project-files/refs/heads/main/code/Main.cpp",
+    "%projname%/Include/MA-GameMaker-EXT.hpp": "https://raw.githubusercontent.com/MA-GameMaker/project-files/refs/heads/main/code/MA-GameMaker-EXT.hpp",
+    "Scripts/Premake.bat": "https://raw.githubusercontent.com/MA-GameMaker/project-files/refs/heads/main/scripts/premake.bat"
+  }
+}

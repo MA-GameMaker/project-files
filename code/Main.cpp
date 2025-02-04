@@ -1,0 +1,1 @@
+#include <MA-GameMaker-EXT.hpp>
