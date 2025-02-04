@@ -1,1 +1,1 @@
-@Vendors/Premake/premake5.exe %vsversion%
+@Vendors\Premake\premake5.exe %vsversion%
