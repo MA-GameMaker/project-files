@@ -18,6 +18,12 @@ workspace "%projname%"
         systemversion "latest"
         defines "PLATFORM_WINDOWS"
 
+group "Dependencies"
+for i, dir in os.matchdirs("Vendors") do
+    print(dir)
+end
+group ""
+
 project "%projname%"
     language "C++"
     cppdialect "C++20"
