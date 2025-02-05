@@ -1,4 +1,5 @@
 {
+  "packagesBaseUrl": "https://raw.githubusercontent.com/MA-GameMaker/packages/refs/heads/main",
   "directories": [
     "%projname%",
     "%projname%/Source",
