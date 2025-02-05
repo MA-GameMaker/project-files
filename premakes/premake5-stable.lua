@@ -40,6 +40,7 @@ project "%projname%"
         local dir = dependencyDirs[dirCount]
         if dir ~= "Vendors/Premake" then
             links { string.sub(dir, 9) }
+            includedirs { "%{wks.location}/" .. dir .. "/Include" }
         end
     end
 
