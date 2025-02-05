@@ -19,8 +19,12 @@ workspace "%projname%"
         defines "PLATFORM_WINDOWS"
 
 group "Dependencies"
-for i, dir in os.matchdirs("Vendors") do
-    print(dir)
+local dependencyDirs = os.matchdirs("Vendors/*")
+for dirCount = 1, #dependencyDirs do
+    local dir = dependencyDirs[dirCount]
+    if dir ~= "Vendors/Premake" then
+        include (dir)
+    end
 end
 group ""
 
@@ -31,6 +35,13 @@ project "%projname%"
     kind "SharedLib"
 
     location "%projname%"
+
+    for dirCount = 1, #dependencyDirs do
+        local dir = dependencyDirs[dirCount]
+        if dir ~= "Vendors/Premake" then
+            links { string.sub(dir, 9) }
+        end
+    end
 
     files {
         "%{prj.location}/Source/**.cpp",
