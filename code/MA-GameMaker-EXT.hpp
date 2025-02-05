@@ -8,8 +8,5 @@
 
 #define GMEXT_EXPORT_C extern "C" GMEXT_EXPORT
 
-template <typename T>
-using GMEXT_TYPE_PTR = T*;
-
-#define GMEXT_TYPE_STRING GMEXT_TYPE_PTR(char)
+#define GMEXT_TYPE_STRING const char*
 #define GMEXT_TYPE_DOUBLE double
